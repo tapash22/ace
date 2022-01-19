@@ -1,0 +1,109 @@
+<template>
+  <div class="partners">
+    <div class="row">
+      <h2>Partners</h2>
+      <div class="box" v-for="partner in partners" :key="partner.id">
+        <div class="left">
+          <img :src="partner.img" />
+        </div>
+        <div class="right">
+            <p>{{partner.name}}</p>
+          <address>
+           {{ partner.detail}}
+          </address>
+          <a href="partner.url">visit site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+    data(){
+        return{
+            partners:[
+                {id:1, name:"partner name", url:"", img:require('../../assets/image/partner1.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
+                {id:2, name:"partner name", url:"", img:require('../../assets/image/partner2.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
+                {id:3, name:"partner name", url:"", img:require('../../assets/image/partner3.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
+                {id:4, name:"partner name", url:"", img:require('../../assets/image/partner4.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
+                {id:5, name:"partner name", url:"", img:require('../../assets/image/partner5.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
+            ],
+        }
+    }
+}
+</script>
+
+<style scoped>
+.parrtners {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.row {
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  display: flex;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.row .box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+.box .left {
+  width: 30%;
+  height: 200px;
+  padding: 5px;
+  margin: 0;
+}
+.box .left img {
+  width: 100%;
+  height: 100%;
+}
+.box .right {
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  margin: 0;
+  background: rgba(117, 108, 108, 0.747);
+}
+.box .right p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box .right address {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Vollkorn', serif;
+  padding: 5px;
+  margin: 0;
+}
+.box .right a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Vollkorn', serif;
+}
+</style>
