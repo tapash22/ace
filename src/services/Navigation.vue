@@ -5,7 +5,7 @@
         <img src="../assets/image/ace_logo.png" />
       </a>
     </div>
-    <nav>
+    <nav :class="{change_color: scrollPosition > 50}">
       <ul class="sticky">
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/gallery">Gallery</router-link></li>
@@ -60,6 +60,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+      scrollPosition: null,
+    };
+  },
+  
+mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+},
+  methods:{
+    updateScroll() {
+       this.scrollPosition = window.scrollY;
+    }
+  },
+}
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&family=Lato:wght@100&family=Lobster&family=Luxurious+Roman&family=Oswald:wght@400;500&family=Poppins:wght@100;500&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&family=Romanesco&family=Vollkorn:wght@500&display=swap');
 
@@ -70,6 +89,9 @@
   margin:0;
   z-index: 999;
   position: fixed;
+}
+.change-color{
+  background-color: #000;
 }
 .navigation .first {
   width: 100%;

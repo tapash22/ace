@@ -1,6 +1,6 @@
 <template>
   <div class="client">
-    <Navigation />
+    <Navigation :class="{change_color: scrollPosition > 100}"></Navigation>
     <div class="row">
       <div class="col-md-12">
         <router-view v-slot="{ Component }">
@@ -22,6 +22,22 @@ export default {
     Navigation,
     Footer,
   },
+
+  data(){
+    return{
+      scrollPosition: null,
+    };
+  },
+
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+},
+  
+methods: {
+    updateScroll() {
+       this.scrollPosition = window.scrollY
+    }
+}
 };
 </script>
 
@@ -31,6 +47,10 @@ export default {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+.client .change_color{
+  background-color: #fff;
+  transition: 0.3s all ease-out;
 }
 
 .row {
