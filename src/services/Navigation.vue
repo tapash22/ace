@@ -69,7 +69,7 @@
   padding: 0;
   margin:0;
   z-index: 999;
-  background: #fff;
+  position: fixed;
 }
 .navigation .first {
   width: 100%;
@@ -78,6 +78,7 @@
   margin: 0;
   display: flex;
   justify-content: center;
+  z-index: 5;
 }
 .first a {
   width: 200px;
@@ -97,8 +98,9 @@
   height: 50px;
   padding: 0;
   margin: 0;
-  background: #8DC63F;
+  background: #8ec63f75;
   justify-content: center;
+  z-index: 5;
 }
 nav .sticky {
   padding: 0;
@@ -120,7 +122,7 @@ nav .sticky li a {
   padding:0;
   margin: 5px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   border-bottom: 2px none #000;
 }
 nav .sticky li a:hover,

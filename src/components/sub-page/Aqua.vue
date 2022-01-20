@@ -16,7 +16,7 @@
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 0;
+  margin-top: 170px;
 }
 .row {
   width: 100%;

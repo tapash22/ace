@@ -1,6 +1,10 @@
 <template>
   <div class="home">
+    <div class="slider">
+        <Slider/>
+      </div>
     <div class="row">
+      
       <h2>Stay with us</h2>
       <div class="divider div-transparent div-dot"></div>
       <div class="col-md-12">
@@ -43,6 +47,7 @@
 </template>
 
 <script>
+import Slider from "../../services/Slider.vue";
 export default {
   data() {
     return {
@@ -92,6 +97,9 @@ export default {
       ],
     };
   },
+  components:{
+    Slider,
+  }
 };
 </script>
 
@@ -103,6 +111,12 @@ export default {
   height: auto;
   padding: 0;
   margin: 0;
+}
+.slider{
+  width: 100%;
+  height: 650px;
+  padding: 0;
+  margin:0;
 }
 .row {
   width: 100%;
