@@ -21,9 +21,8 @@ export default {
     return {
       sliders: [
           {id:1, name:"one", img:require('../assets/image/1.jpg')},
-          {id:2, name:"two", img:require('../assets/image/2.jpg')},
-          {id:3, name:"three", img:require('../assets/image/3.jpg')},
-          {id:3, name:"four", img:require('../assets/image/4.jpg')},
+          {id:2, name:"two", img:require('../assets/image/nav.jpg')},
+          {id:3, name:"three", img:require('../assets/image/ee.jpg')},
       ],
     };
   },
