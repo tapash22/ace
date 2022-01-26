@@ -72,6 +72,14 @@
   </div>
 </template>
 
+<script>
+export default {
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+</script>
+
 <style scoped>
 .about {
   width: 100%;
@@ -107,14 +115,14 @@ h3 {
   width: 33%;
   height: 100%;
   padding: 10px;
-  margin: 0;
+  margin-bottom: 10px;
 }
-.col-md-4 .divider {
+.row .divider {
   position: relative;
   margin: 0;
   height: 1px;
 }
-.col-md-4 .div-transparent:before {
+.row .div-transparent:before {
   content: "";
   position: absolute;
   top: 0;
@@ -125,11 +133,11 @@ h3 {
   background-image: linear-gradient(
     to right,
     transparent,
-    orangered,
+    #FAA61A,
     transparent
   );
 }
-.col-md-4 .div-dot:after {
+.row .div-dot:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -137,8 +145,8 @@ h3 {
   left: calc(50% - 9px);
   width: 18px;
   height: 18px;
-  background-color: rgb(34, 156, 10);
-  border: 1px solid rgb(170, 83, 11);
+  background-color: #8DC63F;
+  border: 1px solid #FAA61A;
   border-radius: 50%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
@@ -148,11 +156,14 @@ h3 {
   font-family: "Vollkorn", serif;
   text-align: justify;
   margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .col-md-8 {
-  width: 66%;
+  width: 67%;
   padding: 10px;
-  margin: 0;
+  margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.61);
   display: block;
 }
@@ -160,7 +171,7 @@ h3 {
     width: 100%;
     height: 120px;
     padding: 10px;
-    margin: 15px;
+    margin: 0;
 }
 .box h4{
     width: 30%;
@@ -172,19 +183,20 @@ h3 {
   text-transform: uppercase;
   padding: 10px;
   margin: 0;
-  background: orangered;
+  background: #FAA61A;
   margin-left: 35%;
   margin-right: 35%;
   margin-bottom: -20px;
-  color: #fff;
+  color: #000;
 } 
 .box p{
     width: 100%;
     padding: 15px;
-    margin: 5px;
+    margin: 0;
     font-size: 1rem;
     font-weight: 500;
     font-family: "Vollkorn", serif;
-    border: 5px double orangered;
+    border: 5px double #FAA61A;
+    box-shadow: 4px 4px 5px #8DC63F;
 }
 </style>

@@ -37,7 +37,7 @@
             </li>
             <li>
               <router-link to="/dairy">Dairy</router-link>
-              <ul class="two">
+              <ul class="twoo">
                 <li><router-link to="/driedmolasses">Dried molasses</router-link></li>
                 <li>
                   <router-link to="/yeastbased">
@@ -90,9 +90,6 @@ mounted() {
   z-index: 999;
   position: fixed;
 }
-.change-color{
-  background-color: #000;
-}
 .navigation .first {
   width: 100%;
   height: 120px;
@@ -120,7 +117,7 @@ mounted() {
   height: 50px;
   padding: 0;
   margin: 0;
-  background: #8ec63f75;
+  background: #00ADEE;
   justify-content: center;
   z-index: 5;
 }
@@ -150,7 +147,7 @@ nav .sticky li a {
 nav .sticky li a:hover,
 nav .sticky li a.router-link-exact-active {
   /* .navbar .ul li a.router-link-exact-active{ */
-  border-bottom: 2px solid rgb(255, 166, 0);;
+  border-bottom: 2px solid #fff;
 }
 .sticky li:hover .ul {
   display: block;
@@ -163,7 +160,7 @@ nav .sticky li a.router-link-exact-active {
   padding: 0;
   margin-top: 5px;
   margin-left: -20px;
-  background: #8DC63F;
+  background: #00ADEE;
   z-index: 5;
 }
 .sticky li .ul li {
@@ -187,20 +184,37 @@ nav .sticky li a.router-link-exact-active {
   margin: 5px;
   border-bottom: 2px none #fff;
 }
-.sticky li .ul li:hover .two {
+.sticky li .ul li:hover .two ,.sticky li .ul li:hover .twoo{
   display: block;
 }
 .ul li .two {
   width: 250px;
+  height: 420px;
+  position: absolute;
+  display: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 370px;
+  background: #00ADEE !important;
+  overflow-x: hidden;
+  overflow-y: scroll ;
+}
+
+.ul li .twoo{
+    width: 250px;
   height: auto;
   position: absolute;
   display: none;
   padding: 0;
   margin-top: 20px;
   margin-left: 370px;
-  background: #8ec63fa9 !important;
+  background: #00ADEE !important;
 }
+
 .ul li .two li:hover {
+  background: rgba(0, 0, 0, 0.445);
+}
+.ul li .twoo li:hover {
   background: rgba(0, 0, 0, 0.445);
 }
 </style>

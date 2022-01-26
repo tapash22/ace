@@ -27,8 +27,12 @@ export default {
                 {id :2, name:"Yeast product", img: require('../../assets/image/partner1.png'),url:'/yeastbased'},
             ],
         }
-    }
-}
+    },
+
+      mounted() {
+    window.scrollTo(0, 0);
+  },
+};
 </script>
 
 <style scoped>
@@ -75,7 +79,7 @@ export default {
     padding: 0;
     margin: 0;
     border: none;
-    background: #fff;
+    box-shadow: 5px 5px 5px #8DC63F;
 }
 .card .card-body{
     width: 100%;
@@ -94,11 +98,12 @@ export default {
     height: 20%;
     padding: 5px;
     margin: 0;
-    border: 4px solid orangered;
+    border: 4px solid #faa61a;
 }
 .card .card-footer p{
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: "Vollkorn", serif;
     padding: 5px;
     margin: 0;
     display: flex;

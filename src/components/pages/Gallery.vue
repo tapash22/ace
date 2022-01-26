@@ -46,7 +46,11 @@ export default {
             ],
         };
     },
-}
+
+      mounted() {
+    window.scrollTo(0, 0);
+  },
+};
 </script>
 
 <style scoped>
@@ -81,6 +85,8 @@ export default {
     height: 100%;
     padding: 5px;
     margin: 5px;
+    background: #FAA61A;
+    box-shadow: 5px 5px 5px #8DC63F;
 }
 .card img{
     width: 100%;

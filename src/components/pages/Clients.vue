@@ -1,6 +1,6 @@
 <template>
   <div class="client">
-    <Navigation :class="{change_color: scrollPosition > 100}"></Navigation>
+    <Navigation :class="{change_color: scrollPosition > 20}"></Navigation>
     <div class="row">
       <div class="col-md-12">
         <router-view v-slot="{ Component }">

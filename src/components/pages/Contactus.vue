@@ -50,6 +50,14 @@
   </div>
 </template>
 
+<script>
+export default {
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+</script>
+
 <style scoped>
 .contactus {
   width: 100%;
@@ -149,7 +157,7 @@ h2 {
   margin-left: 10px;
   width: 50px;
   height: 50px;
-  background: #000;
+  background: #faa61a;
   border-radius: 10px;
   transition: 0.3s all ease-out;
 }
@@ -161,10 +169,10 @@ h2 {
 .link li a i {
   font-size: 2rem;
   font-weight: 700;
-  color: orangered;
+  color: #fff;
 }
 .link li:hover {
-  background: #fff;
+  background: #8dc63f ;
   transition: 0.3s all ease-out;
 }
 </style>

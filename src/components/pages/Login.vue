@@ -2,8 +2,7 @@
   <div class="login">
     <div class="row">
       <div class="col-md-8">
-        <div class="image">
-          
+        <div class="image">     
         </div>
       </div>
       <div class="col-md-4">
@@ -29,6 +28,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+</script>
 
 <style scoped>
 .login {
@@ -98,5 +105,14 @@ form .form-control {
   border-radius: 20px;
   background: #fff;
   border: 1px solid rgb(68, 0, 255);
+}
+form .btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Vollkorn', serif;
 }
 </style>

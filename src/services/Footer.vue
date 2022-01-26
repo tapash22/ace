@@ -26,7 +26,7 @@
       <div class="col-md-4 product">
         <h3>We provide</h3>
         <div class="image">
-          <img src="../assets/image/footer1.jpg" />
+          <img src="../assets/image/footer.png" />
         </div>
       </div>
       <div class="col-md-4 contact">
@@ -97,9 +97,10 @@
   justify-content: center;
   width: 600px;
   height: 60px;
-   background: rgb(255, 68, 0);
+   background: #00ADEE;
    z-index: 1;
    border-radius: 5px;
+   box-shadow: 3px 3px 4px #2E3191;
 }
 ul li {
   padding: 5px;
@@ -112,29 +113,29 @@ ul li p {
   font-weight: 500;
   font-family: 'Vollkorn', serif;
   padding: 5px;
-  color: #fff;
+  color: #000;
 }
 li i {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 5px;
   margin: 0;
-  color: #fff;
+  color: #000;
   z-index: 2;
 }
 .quick {
   padding: 10px;
   margin-top: -30px;
-  background: #8dc63f;
+  background: #00ADEE;
   width: 20%;
-  box-shadow: 2px 2px 5px #8dc63f;
+  box-shadow: 2px 2px 5px #2E3191;
 }
 .product {
   padding: 10px;
   margin-top: -30px;
-  background: #8ec63fb0;
+  background: #00ADEE;
   width: 40%;
-  box-shadow: 2px 2px 5px #8ec63fcb;
+  box-shadow: 2px 2px 5px #2E3191;
 }
 .product .image {
   padding: 0;
@@ -150,9 +151,9 @@ li i {
 .contact {
   padding: 10px;
   margin-top: -30px;
-  background: #8ec63f7c;
+  background: #00ADEE;
   width: 40%;
-  box-shadow: 2px 2px 5px #8ec63f9a;
+  box-shadow: 2px 2px 5px #2E3191;
 }
 .col-md-4 h3 {
   /* margin-top: 20px; */
@@ -183,7 +184,8 @@ li i {
   margin: 0;
 }
 .row2 {
-  background: #000;
+  background: #fff;
+  box-shadow: 2px 2px 4px #000;
   display: flex;
   padding: 10px;
   margin: 0;
@@ -193,7 +195,7 @@ li i {
 .row2 p {
   font-size: 0.8rem;
   font-weight: 400;
-  color: orange;
+  color: #000;
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;

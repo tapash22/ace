@@ -30,8 +30,12 @@ export default {
                 {id:5, name:"partner name", url:"", img:require('../../assets/image/partner5.png'),detail:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sapiente eligendi dicta possimus eos recusandae quod laudantium consequuntur provident corporis iure delectus ea saepe facere quae, et iste eveniet adipisci"},
             ],
         }
-    }
-}
+    },
+
+      mounted() {
+    window.scrollTo(0, 0);
+  },
+};
 </script>
 
 <style scoped>
@@ -69,6 +73,7 @@ h2 {
   height: 200px;
   padding: 5px;
   margin: 0;
+  border: 5px solid #faa61a;
 }
 .box .left img {
   width: 100%;
@@ -79,7 +84,8 @@ h2 {
   height: 200px;
   padding: 10px;
   margin: 0;
-  background: rgba(117, 108, 108, 0.747);
+  background: #faa61a;
+  box-shadow: 4px 5px 4px #8dc63f;
 }
 .box .right p{
     font-size: 1.5rem;
@@ -88,7 +94,7 @@ h2 {
     font-family: 'Vollkorn', serif;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 .box .right address {
   font-size: 1.2rem;
@@ -99,7 +105,7 @@ h2 {
 }
 .box .right a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   font-size: 1.4rem;

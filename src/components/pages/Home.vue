@@ -97,6 +97,11 @@ export default {
       ],
     };
   },
+
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+  
   components:{
     Slider,
   }
@@ -154,7 +159,7 @@ h2 {
   background-image: linear-gradient(
     to right,
     transparent,
-    orangered,
+    #FAA61A,
     transparent
   );
 }
@@ -166,8 +171,8 @@ h2 {
   left: calc(50% - 9px);
   width: 18px;
   height: 18px;
-  background-color: rgb(34, 156, 10);
-  border: 1px solid rgb(170, 83, 11);
+  background-color: #8DC63F;
+  border: 1px solid #FAA61A;
   border-radius: 50%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
@@ -183,8 +188,10 @@ h2 {
   width: 600px;
   height: 60px;
   padding: 5px;
-  margin: 5px;
-  background: #fff;
+  margin: 10px;
+  background:  #FAA61A;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px #8DC63F;
   /* border: 5px double orangered; */
 }
 .col-md-12 .box p {
@@ -192,12 +199,14 @@ h2 {
   font-weight: 500;
   font-family: 'Vollkorn', serif;
   text-align: center;
+  color:#fff;
 }
 .col-md-3 {
   width: 25%;
   height: 200px;
   padding: 0;
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -217,6 +226,7 @@ h2 {
   margin: 0;
   border: none;
   background: #fff;
+  box-shadow: 0 0 10px #8DC63F;
 }
 .card .card-body {
   width: 100%;
@@ -231,7 +241,7 @@ h2 {
   height: 20%;
   padding: 0;
   margin: 0;
-  background: rgb(255, 68, 0);
+  background: #FAA61A;
 }
 .card-footer p {
   font-size: 1.5rem;
@@ -245,7 +255,8 @@ h2 {
   width: 33%;
   height: 350px;
   padding: 10px;
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -254,6 +265,7 @@ h2 {
   height: 100%;
   padding: 0;
   margin: 0;
+  box-shadow: 0 0 10px #274202;
 }
 .col-md-4 .card .card-header {
   width: 100%;
@@ -292,7 +304,7 @@ h2 {
   font-family: 'Vollkorn', serif;
   text-transform: uppercase;
   text-align: center;
-  background: orangered;
+  background: #FAA61A;
   color: #fff;
 }
 .col-md-4 .card .card-body ul li:nth-child(2) {
@@ -315,6 +327,6 @@ h2 {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: 'Vollkorn', serif;
-  background: rgba(255, 68, 0, 0.692);
+  background: #FAA61A;
 }
 </style>
