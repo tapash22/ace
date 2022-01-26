@@ -1,7 +1,7 @@
 <template>
   <div class="poultry">
     <div class="row">
-      <h2>poultry</h2>
+      <h2>products</h2>
       <div class="col-md-3" v-for="product in products" :key="product.id">
         <router-link :to="product.url">
           <div class="card">
