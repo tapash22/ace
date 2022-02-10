@@ -29,7 +29,6 @@ export default {
   components: {
     Carousel,
     Slide,
-
     Pagination,
   },
 };

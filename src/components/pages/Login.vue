@@ -42,13 +42,14 @@ export default {
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 170px;
+  margin-top: 150px;
 }
 .row {
   width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
+background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
 }
 .col-md-8{
     width: 70%;

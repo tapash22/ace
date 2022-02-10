@@ -1,12 +1,15 @@
 <template>
   <div class="contactus">
     <div class="row">
-      <div class="col-md-6">
+      <div class="image">
+        <img src="../../assets/image/contact.jpg"/>
+      </div>
+      <div class="col-md-6 ">
         <div class="image">
-          <img src="../../assets/image/c.jpg" />
+          <img src="../../assets/image/contact1.png" />
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 shade">
         <div class="box">
           <h3>Corporate Office</h3>
           <address>
@@ -63,14 +66,26 @@ export default {
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 170px;
+  margin-top: 150px;
 }
 .row {
   width: 100%;
-  padding: 10px;
+  padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
+background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
+}
+.row .image{
+  width: 100%;
+  height:500px;
+ padding: 0;
+ margin: 0; 
+}
+.row .image img{
+  width: 100%;
+  height: 100%;
+
 }
 h2 {
   font-size: 1.5rem;
@@ -82,19 +97,20 @@ h2 {
 .col-md-6 {
   width: 50%;
   height: 100%;
-  padding: 10px;
+  padding: 0;
   margin: 0;
 }
+
 .col-md-6 .image{
     width: 800px;
     height: 500px;
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
 .col-md-6 .image img{
     width: 100%;
     height: 100%;
-    border: 5px #fff;
 }
 .col-md-6 .box {
   display: block;

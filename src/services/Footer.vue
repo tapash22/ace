@@ -19,15 +19,17 @@
           <li><router-link to="/home">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/gallery">Gallery</router-link></li>
-          <li><router-link to="/partner">Partners</router-link></li>
+          <li><router-link to="/partners">Partners</router-link></li>
           <li><router-link to="/login">Login</router-link></li>
         </ul>
       </div>
       <div class="col-md-4 product">
         <h3>We provide</h3>
+        <router-link to="/products">
         <div class="image">
-          <img src="../assets/image/footer.png" />
+          <img src="../assets/image/p.png" />
         </div>
+        </router-link>
       </div>
       <div class="col-md-4 contact">
         <h3>Contact Form</h3>
@@ -53,7 +55,7 @@
             ></textarea>
           </div>
           <div class="my-3">
-            <button class="btn btn-primary" @click.prevent="sendMessage()">
+            <button class="btn" @click.prevent="sendMessage()">
               Send
             </button>
           </div>
@@ -97,10 +99,10 @@
   justify-content: center;
   width: 600px;
   height: 60px;
-   background: #00ADEE;
+   background: green;
    z-index: 1;
    border-radius: 5px;
-   box-shadow: 3px 3px 4px #2E3191;
+   box-shadow: 0 0 20px #fff;
 }
 ul li {
   padding: 5px;
@@ -126,16 +128,16 @@ li i {
 .quick {
   padding: 10px;
   margin-top: -30px;
-  background: #00ADEE;
+  background: green;
   width: 20%;
-  box-shadow: 2px 2px 5px #2E3191;
+  box-shadow: 2px 2px 5px #fff;
 }
 .product {
   padding: 10px;
   margin-top: -30px;
-  background: #00ADEE;
+  background: green;
   width: 40%;
-  box-shadow: 2px 2px 5px #2E3191;
+  box-shadow: 2px 2px 5px #fff;
 }
 .product .image {
   padding: 0;
@@ -151,9 +153,9 @@ li i {
 .contact {
   padding: 10px;
   margin-top: -30px;
-  background: #00ADEE;
+  background: green;
   width: 40%;
-  box-shadow: 2px 2px 5px #2E3191;
+  box-shadow: 2px 2px 5px #fff;
 }
 .col-md-4 h3 {
   /* margin-top: 20px; */
@@ -183,9 +185,19 @@ li i {
   padding: 5px;
   margin: 0;
 }
-.row2 {
+.contact form .btn{
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  color: #000;
   background: #fff;
-  box-shadow: 2px 2px 4px #000;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.row2 {
+  background: rgba(0, 128, 0, 0.767);
+  box-shadow: 2px 2px 4px #fff;
   display: flex;
   padding: 10px;
   margin: 0;

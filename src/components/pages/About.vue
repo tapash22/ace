@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <div class="row">
-      <h2>about</h2>
+      <div class="image">
+        <img src="../../assets/image/about.jpg" />
+      </div>
       <div class="col-md-4">
         <h3>Message</h3>
         <div class="divider div-transparent div-dot"></div>
@@ -74,10 +76,10 @@
 
 <script>
 export default {
-    mounted() {
+  mounted() {
     window.scrollTo(0, 0);
   },
-}
+};
 </script>
 
 <style scoped>
@@ -85,13 +87,26 @@ export default {
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 170px;
+  margin-top: 150px;
 }
 .row {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(0deg, #fff, rgba(49, 233, 25, 0.856));
+}
+
+.row .image{
+  width: 100%;
+  height:500px;
+ padding: 0;
+ margin: 0; 
+}
+.row .image img{
+  width: 100%;
+  height: 100%;
+
 }
 h2 {
   font-size: 1.5rem;
@@ -117,6 +132,9 @@ h3 {
   padding: 10px;
   margin-bottom: 10px;
 }
+.col-md-4:hover {
+  box-shadow: 0 0 10px #fff;
+}
 .row .divider {
   position: relative;
   margin: 0;
@@ -133,7 +151,7 @@ h3 {
   background-image: linear-gradient(
     to right,
     transparent,
-    #FAA61A,
+    #faa61a,
     transparent
   );
 }
@@ -145,8 +163,8 @@ h3 {
   left: calc(50% - 9px);
   width: 18px;
   height: 18px;
-  background-color: #8DC63F;
-  border: 1px solid #FAA61A;
+  background-color: #8dc63f;
+  border: 1px solid #faa61a;
   border-radius: 50%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
@@ -164,18 +182,21 @@ h3 {
   width: 67%;
   padding: 10px;
   margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.61);
   display: block;
 }
-.col-md-8 .box{
-    width: 100%;
-    height: 120px;
-    padding: 10px;
-    margin: 0;
+.col-md-8 .box {
+  width: 98%;
+  height: 120px;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
 }
-.box h4{
-    width: 30%;
-    font-size: 1.2rem;
+.col-md-8 .box:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.box h4 {
+  width: 30%;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
@@ -183,20 +204,20 @@ h3 {
   text-transform: uppercase;
   padding: 10px;
   margin: 0;
-  background: #FAA61A;
+  /* background: #FAA61A; */
   margin-left: 35%;
   margin-right: 35%;
   margin-bottom: -20px;
   color: #000;
-} 
-.box p{
-    width: 100%;
-    padding: 15px;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: "Vollkorn", serif;
-    border: 5px double #FAA61A;
-    box-shadow: 4px 4px 5px #8DC63F;
+}
+.box p {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Vollkorn", serif;
+  /* border: 5px double #FAA61A; */
+  /* box-shadow: 4px 4px 5px #8DC63F; */
 }
 </style>

@@ -1,19 +1,22 @@
 <template>
   <div class="home">
     <div class="slider">
-        <Slider/>
+      <h3>We Concern to delivery best product for Poultry</h3>
+      <button class="btn">Contect Us</button>
+
+        <!-- <Slider/> -->
       </div>
     <div class="row">
       
-      <h2>Stay with us</h2>
-      <div class="divider div-transparent div-dot"></div>
-      <div class="col-md-12">
+      <!-- <h2>Stay with us</h2> -->
+      <!-- <div class="divider div-transparent div-dot"></div> -->
+      <!-- <div class="col-md-12">
         <div class="box">
           <p>Have any slogan</p>
         </div>
-      </div>
-      <h2>products</h2>
-      <div class="divider div-transparent div-dot"></div>
+      </div> -->
+      <h2>WE &nbsp; PROVIDE</h2>
+      <!-- <div class="divider div-transparent div-dot"></div> -->
       <div class="col-md-3" v-for="product in products" :key="product.id">
         <router-link :to="product.url">
           <div class="card">
@@ -27,7 +30,7 @@
         </router-link>
       </div>
       <h2>Events</h2>
-      <div class="divider div-transparent div-dot"></div>
+      <!-- <div class="divider div-transparent div-dot"></div> -->
       <div class="col-md-4" v-for="event in events" :key="event.id">
         <div class="card">
           <div class="card-header">
@@ -47,7 +50,7 @@
 </template>
 
 <script>
-import Slider from "../../services/Slider.vue";
+// import Slider from "../../services/Slider.vue";
 export default {
   data() {
     return {
@@ -55,19 +58,19 @@ export default {
         {
           id: 1,
           name: "POULTRY",
-          img: require("../../assets/image/chi.png"),
+          img: require("../../assets/image/p1.png"),
           url: "/poultry",
         },
         {
           id: 2,
           name: "DAIRY",
-          img: require("../../assets/image/co.png"),
+          img: require("../../assets/image/c1.png"),
           url: "/dairy",
         },
         {
           id: 3,
           name: "AQUA",
-          img: require("../../assets/image/fi.png"),
+          img: require("../../assets/image/a1.png"),
           url: "/aqua",
         },
       ],
@@ -103,25 +106,55 @@ export default {
   },
   
   components:{
-    Slider,
+    // Slider,
   }
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&family=Lato:wght@100&family=Lobster&family=Luxurious+Roman&family=Oswald:wght@400;500&family=Poppins:wght@100;500&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&family=Romanesco&family=Vollkorn:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&family=Lato:wght@100&family=Lobster&family=Luxurious+Roman&family=Merienda:wght@700&family=Montserrat&family=Oswald:wght@400;500&family=Poppins:wght@100;500&family=Raleway:ital,wght@1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&family=Romanesco&family=Ubuntu:wght@700&family=Vollkorn:wght@500&display=swap');
 .home {
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 0;
+  margin-top: 150px;
+  margin-bottom: 0;
 }
 .slider{
   width: 100%;
-  height: 650px;
+  height: 450px;
   padding: 0;
   margin:0;
+  background-image: url('../../assets/image/1.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+}
+.slider h3{
+  width: 30%;
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  padding:40px;
+  margin: 20px;
+  color: rgb(52, 218, 52);
+}
+.slider .btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 200px;
+  margin-left: -60px;
+  background: #75be0e83;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color:#fff;
+  transition:0.5s all ease-out;
+}
+.slider .btn:hover{
+  transition:0.3s all ease-out;
+  box-shadow: 2px 5px 20px #75be0ef1;
 }
 .row {
   width: 100%;
@@ -133,6 +166,7 @@ export default {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
 }
 h2 {
   font-size: 1.5rem;
@@ -189,7 +223,7 @@ h2 {
   height: 60px;
   padding: 5px;
   margin: 10px;
-  background:  #FAA61A;
+  /* background:  #FAA61A; */
   border-radius: 10px;
   box-shadow: 5px 4px 4px #8DC63F;
   /* border: 5px double orangered; */
@@ -199,11 +233,11 @@ h2 {
   font-weight: 500;
   font-family: 'Vollkorn', serif;
   text-align: center;
-  color:#fff;
+  color:#000;
 }
 .col-md-3 {
   width: 25%;
-  height: 200px;
+  height: 260px;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -221,12 +255,12 @@ h2 {
 }
 .col-md-3 a .card {
   width: 100%;
-  height: 100%;
+  height: 250px;
   padding: 0;
   margin: 0;
   border: none;
   background: #fff;
-  box-shadow: 0 0 10px #8DC63F;
+  box-shadow: 0 0 20px #75be0e;
 }
 .card .card-body {
   width: 100%;
@@ -235,6 +269,19 @@ h2 {
   margin: 0;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+.card .card-body img{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  transform: scale(1);
+  transition: 0.3s transform ease-out;
+}
+.card .card-body img:hover{
+    transform: scale(1.1);
+  transition: 0.5s transform ease-out;
 }
 .card .card-footer {
   width: 100%;
@@ -265,19 +312,26 @@ h2 {
   height: 100%;
   padding: 0;
   margin: 0;
-  box-shadow: 0 0 10px #274202;
+  box-shadow: 0 0 50px green;
 }
 .col-md-4 .card .card-header {
   width: 100%;
   height: 50%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 .col-md-4 .card .card-header img {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  transform: scale(1);
+  transition: 0.5s transform ease-out;
+}
+.col-md-4 .card .card-header img:hover{
+  transform:scale(1.1);
+  transition: 0.3s transform ease-out;
 }
 .col-md-4 .card .card-body {
   width: 100%;
@@ -304,8 +358,7 @@ h2 {
   font-family: 'Vollkorn', serif;
   text-transform: uppercase;
   text-align: center;
-  background: #FAA61A;
-  color: #fff;
+  color: #000;
 }
 .col-md-4 .card .card-body ul li:nth-child(2) {
   width: 100%;
@@ -313,7 +366,7 @@ h2 {
   padding: 5px;
   margin: 0;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Vollkorn', serif;
   text-align: justify;
   background: #fff;
@@ -327,6 +380,5 @@ h2 {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: 'Vollkorn', serif;
-  background: #FAA61A;
 }
 </style>

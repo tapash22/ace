@@ -36,13 +36,14 @@ export default {
     width: 100%;
     height: auto;
     padding: 0;
-    margin-top: 170px;
+    margin-top: 150px;
 }
 .row{
     width: 100%;
     padding: 10px;
     margin: 0;
     display: flex;
+    background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
 }
  h2{
      font-size: 1.5rem;
@@ -61,14 +62,21 @@ export default {
 .col-md-4 .card{
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 0;
     margin: 5px;
-    background: #FAA61A;
+    background: #fff;
     box-shadow: 5px 5px 5px #8DC63F;
+    overflow: hidden;
 }
 .card img{
     width: 100%;
     height: 100%;
+    transform: scale(1);
+    transition: 0.5s transform ease-out;
+}
+.card img:hover{
+        transform: scale(1.09);
+    transition: 0.3s transform ease-out;
 }
 
 </style>

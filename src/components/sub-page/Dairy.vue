@@ -23,8 +23,8 @@ export default {
     data(){
         return{
             dairys:[
-                {id :1, name:"Dried molasses", img: require('../../assets/image/partner1.png'),url:'/driedmolasses'},
-                {id :2, name:"Yeast product", img: require('../../assets/image/partner1.png'),url:'/yeastbased'},
+                {id :1, name:"Dried molasses", img: require('../../assets/image/c1.png'),url:'/driedmolasses'},
+                {id :2, name:"Yeast product", img: require('../../assets/image/c1.png'),url:'/yeastbased'},
             ],
         }
     },

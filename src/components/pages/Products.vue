@@ -1,7 +1,9 @@
 <template>
   <div class="poultry">
     <div class="row">
-      <h2>products</h2>
+            <div class="image">
+        <img src="../../assets/image/product.jpg"/>
+      </div>
       <div class="col-md-3" v-for="product in products" :key="product.id">
         <router-link :to="product.url">
           <div class="card">
@@ -26,19 +28,19 @@ export default {
         {
           id: 1,
           name: "POULTRY",
-          img: require("../../assets/image/chi.png"),
+          img: require("../../assets/image/p1.png"),
           url: "/poultry",
         },
         {
           id: 2,
           name: "DAIRY",
-          img: require("../../assets/image/co.png"),
+          img: require("../../assets/image/c1.png"),
           url: "/dairy",
         },
         {
           id: 3,
           name: "AQUA",
-          img: require("../../assets/image/fi.png"),
+          img: require("../../assets/image/a1.png"),
           url: "/aqua",
         },
       ],
@@ -59,26 +61,31 @@ export default {
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 170px;
+  margin-top: 150px;
 }
 .row {
   width: 100%;
-  padding: 10px;
+  padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
+      background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
 }
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Vollkorn", serif;
-  text-align: center;
-  text-transform: uppercase;
+.row .image{
+  width: 100%;
+  height:500px;
+ padding: 0;
+ margin: 0; 
+}
+.row .image img{
+  width: 100%;
+  height: 100%;
+
 }
 .col-md-3 {
   width: 25%;
   height: 250px;
-  padding: 5px;
+  padding: 20px;
   margin: 0;
   display: flex;
   justify-content: center;
