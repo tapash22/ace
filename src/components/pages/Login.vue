@@ -59,7 +59,7 @@ background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
 }
 
 .col-md-8 .image {
-  width: 900px;
+  width: 100%;
   height: 400px;
   padding: 0;
   margin: 0;

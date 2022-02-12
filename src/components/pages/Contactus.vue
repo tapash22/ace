@@ -102,7 +102,7 @@ h2 {
 }
 
 .col-md-6 .image{
-    width: 800px;
+    width: 100%;
     height: 500px;
     padding: 0;
     margin: 0;
