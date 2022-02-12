@@ -2,7 +2,7 @@
   <div class="home">
     <div class="slider">
       <h3>We Concern to delivery best product for Poultry</h3>
-      <button class="btn">Contect Us</button>
+      <button class="btn">Contact Us</button>
 
         <!-- <Slider/> -->
       </div>
