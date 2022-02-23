@@ -3,48 +3,44 @@
     <div class="slider">
       <h3>We Concern to delivery best product for Poultry</h3>
       <button class="btn">Contact Us</button>
-
-        <!-- <Slider/> -->
-      </div>
+    </div>
     <div class="row">
-      
-      <!-- <h2>Stay with us</h2> -->
-      <!-- <div class="divider div-transparent div-dot"></div> -->
-      <!-- <div class="col-md-12">
-        <div class="box">
-          <p>Have any slogan</p>
-        </div>
-      </div> -->
-      <h2>WE &nbsp; PROVIDE</h2>
-      <!-- <div class="divider div-transparent div-dot"></div> -->
-      <div class="col-md-3" v-for="product in products" :key="product.id">
-        <router-link :to="product.url">
-          <div class="card">
-            <div class="card-body">
+      <div class="col-md-3">
+        <h2>Sevices</h2>
+        <p>Solution for your firm</p>
+      </div>
+      <div class="col-md-9">
+        <div class="box2">
+          <div class="container2" v-for="product in products" :key="product.id">
+            <a href="product.url">
               <img :src="product.img" />
-            </div>
-            <div class="card-footer">
-              <p>{{ product.name }}</p>
-            </div>
-          </div>
-        </router-link>
-      </div>
-      <h2>Events</h2>
-      <!-- <div class="divider div-transparent div-dot"></div> -->
-      <div class="col-md-4" v-for="event in events" :key="event.id">
-        <div class="card">
-          <div class="card-header">
-            <img :src="event.img" />
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>{{event.title}}</li>
-              <li>{{event.des}}</li>
-              <li>{{event.url}}</li>
-            </ul>
+              <div class="overlay2">
+                <div class="text2">{{ product.name }}</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="row1">
+      <div class="col-md-3 blog">
+        <h2>Blog</h2>
+        <p>Introduce with you a new firming phermacutical using</p>
+      </div>
+       <div class="col-md-9 blog1">
+         <div class="box" v-for="event in events" :key="event.id">
+           <div class="card">
+             <div class="card-header">
+               <img :src="event.img"/>
+             </div>
+             <div class="card-body">
+               <h4>{{event.title}}</h4>
+               <p>{{event.des}}</p>
+               <a href="event.url">Read more..</a>
+             </div>
+           </div>
+         </div>
+       </div>
     </div>
   </div>
 </template>
@@ -101,46 +97,46 @@ export default {
     };
   },
 
-    mounted() {
+  mounted() {
     window.scrollTo(0, 0);
   },
-  
-  components:{
+
+  components: {
     // Slider,
-  }
+  },
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&family=Lato:wght@100&family=Lobster&family=Luxurious+Roman&family=Merienda:wght@700&family=Montserrat&family=Oswald:wght@400;500&family=Poppins:wght@100;500&family=Raleway:ital,wght@1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&family=Romanesco&family=Ubuntu:wght@700&family=Vollkorn:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gideon+Roman&family=Lato:wght@100&family=Lobster&family=Luxurious+Roman&family=Merienda:wght@700&family=Montserrat&family=Oswald:wght@400;500&family=Poppins:wght@100;500&family=Raleway:ital,wght@1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&family=Romanesco&family=Ubuntu:wght@700&family=Vollkorn:wght@500&display=swap");
 .home {
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 150px;
+  margin-top: 140px;
   margin-bottom: 0;
 }
-.slider{
+.slider {
   width: 100%;
   height: 450px;
   padding: 0;
-  margin:0;
-  background-image: url('../../assets/image/1.jpg');
+  margin: 0;
+  background-image: url("../../assets/image/1.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: left;
 }
-.slider h3{
-  width: 30%;
+.slider h3 {
+  width: 40%;
   font-size: 3.5rem;
   font-weight: 900;
-  font-family: 'Raleway', sans-serif;
-  padding:40px;
+  font-family: "Raleway", sans-serif;
+  padding: 40px;
   margin: 20px;
   color: rgb(52, 218, 52);
 }
-.slider .btn{
+.slider .btn {
   width: 150px;
   height: 50px;
   border-radius: 20px;
@@ -149,236 +145,216 @@ export default {
   background: #75be0e83;
   font-size: 1.3rem;
   font-weight: 700;
-  color:#fff;
-  transition:0.5s all ease-out;
+  color: #fff;
+  transition: 0.5s all ease-out;
 }
-.slider .btn:hover{
-  transition:0.3s all ease-out;
+.slider .btn:hover {
+  transition: 0.3s all ease-out;
   box-shadow: 2px 5px 20px #75be0ef1;
 }
 .row {
   width: 100%;
   height: 100%;
   padding: 0;
-  margin-left: 0;
+  /* margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
   display: flex;
-  justify-content: center;
-  background-image: linear-gradient(0deg, #fff,rgba(49, 233, 25, 0.856));
+  /* background-image: linear-gradient(0deg, #fff, rgba(49, 233, 25, 0.856)); */
 }
-h2 {
-  font-size: 1.5rem;
+.row .col-md-3 {
+  width: 25%;
+  height: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin: 0;
+  display: block;
+  background: #01abed;
+      border: 10px solid #F9A51A;
+  
+}
+.row .col-md-3 h2 {
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
   text-transform: uppercase;
+  color: #f7f0f5;
   padding: 5px;
   margin: 5px;
+  height: 100%;
 }
-.row .divider {
-  position: relative;
-  margin: 0;
-  height: 1px;
+.row .col-md-3 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  color:#f7f0f5;
 }
-.row .div-transparent:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 40%;
-  right: 40%;
-  width: 20%;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #FAA61A,
-    transparent
-  );
-}
-.row .div-dot:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -9px;
-  left: calc(50% - 9px);
-  width: 18px;
-  height: 18px;
-  background-color: #8DC63F;
-  border: 1px solid #FAA61A;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
-}
-.col-md-12 {
-  width: 100%;
+.row .col-md-9 {
+  width: 75%;
   height: 100%;
   padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  display: block;
+  background: #f7f0f5;
 }
-.col-md-12 .box {
-  width: 600px;
-  height: 60px;
-  padding: 5px;
-  margin: 10px;
-  /* background:  #FAA61A; */
-  border-radius: 10px;
-  box-shadow: 5px 4px 4px #8DC63F;
-  /* border: 5px double orangered; */
-}
-.col-md-12 .box p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: 'Vollkorn', serif;
-  text-align: center;
-  color:#000;
-}
-.col-md-3 {
-  width: 25%;
-  height: 260px;
-  padding: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-.col-md-3 a {
+.col-md-9 .box2 {
   width: 100%;
-  color: #000;
-  padding: 0;
-  margin-top: 20px;
-  text-decoration: none;
+  height: 100%;
+  padding: 15px;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
-.col-md-3 a .card {
+.col-md-9 .box2 .container2 {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  border: 1px solid #01abed;
+  border-top-right-radius: 5px;
+  margin: 10px;
+}
+.col-md-9 .box2 .container2 a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.col-md-9 .box2 .container2 img {
   width: 100%;
   height: 250px;
   padding: 0;
   margin: 0;
-  border: none;
-  background: #fff;
-  box-shadow: 0 0 20px #75be0e;
 }
-.card .card-body {
-  width: 100%;
-  height: 80%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+.col-md-9 .box2 .overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f9a31ab0;
   overflow: hidden;
-}
-.card .card-body img{
-  width: 100%;
+  width: 0;
   height: 100%;
-  padding: 0;
-  margin: 0;
-  transform: scale(1);
-  transition: 0.3s transform ease-out;
+  transition: 0.3s ease;
 }
-.card .card-body img:hover{
-    transform: scale(1.1);
-  transition: 0.5s transform ease-out;
-}
-.card .card-footer {
+.col-md-9 .box2 .container2:hover .overlay2 {
   width: 100%;
-  height: 20%;
-  padding: 0;
-  margin: 0;
-  background: #FAA61A;
+  cursor: pointer;
 }
-.card-footer p {
+.col-md-9 .box2 .text2 {
+  color: white;
   font-size: 1.5rem;
-  font-weight: 500;
-  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  font-family: "Lobster", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* blog */
+.row1 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  /* background-image: linear-gradient(0deg, #fff, rgba(49, 233, 25, 0.856)); */
+}
+.row1 .blog {
+  width: 25%;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin: 0;
+  display: block;
+  background: #f7f0f5;
+  border: 10px solid #F9A51A;
+}
+.row1 .blog h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  text-transform: uppercase;
+  color: #01abed;
+  padding: 5px;
+  margin: 5px;
+  height: 100%;
+}
+.row1 .blog p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  color: #01abed;
+}
+.row1 .blog1{
+  width: 75%;
+  height: 450px;
   padding: 0;
   margin: 0;
-  text-align: center;
-}
-.col-md-4 {
-  width: 33%;
-  height: 350px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background: #01abed;
   display: flex;
   justify-content: center;
 }
-.col-md-4 .card {
-  width: 70%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 0 50px green;
-}
-.col-md-4 .card .card-header {
+.blog1 .box{
   width: 100%;
-  height: 50%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  padding:20px;
+  margin:0;
+}
+.blog1 .box .card{
+  width: 100%;
+  height: 400px;
+  padding: 5px;
+  margin:0;
+  background:#fff;
+}
+.blog1 .box .card .card-header{
+  width:100%;
+  height:40%;
+  padding:0;
+  margin:0;
   overflow: hidden;
 }
-.col-md-4 .card .card-header img {
+.blog1 .box .card .card-header img{
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
-  transform: scale(1);
-  transition: 0.5s transform ease-out;
+    transform:scale(1);
+  transition:0.4s transform ease-out;
 }
-.col-md-4 .card .card-header img:hover{
-  transform:scale(1.1);
-  transition: 0.3s transform ease-out;
+.blog1 .box .card .card-header:hover img{
+  transform:scale(1.08);
+  transition:0.4s transform ease-out;
 }
-.col-md-4 .card .card-body {
-  width: 100%;
-  height: 50%;
-  padding: 0;
-  margin: 0;
-}
-.col-md-4 .card .card-body ul {
-  width: 100%;
-  height: 200%;
-  padding: 0;
-  margin: 0;
-}
-.col-md-4 .card .card-body ul li {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.col-md-4 .card .card-body ul li:nth-child(1) {
-  width: 100%;
-  height: 10%;
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Vollkorn', serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000;
-}
-.col-md-4 .card .card-body ul li:nth-child(2) {
-  width: 100%;
-  height: 30%;
-  padding: 5px;
-  margin: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  font-family: 'Vollkorn', serif;
-  text-align: justify;
+.blog1 .box .card .card-body{
+  width:100%;
+  height:60%;
+  padding:5px;
+  margin:0;
+  display: block;
   background: #fff;
 }
-.col-md-4 .card .card-body ul li:nth-child(3) {
-  width: 100%;
-  height: 10%;
-  padding: 0;
-  margin: 0;
-  color: #000;
-  font-size: 1.3rem;
+.blog1 .box .card .card-body h4{
+  font-size: 1.2rem;
   font-weight: 600;
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
+  text-transform: uppercase;
+  padding:5px;
+}
+.blog1 .box .card .card-body p{
+    font-size: 1rem;
+  font-weight: 500;
+  font-family: "Vollkorn", serif;
+  padding:5px;
+}
+.blog1 .box .card .card-body a{
+      font-size: 1rem;
+  font-weight: 600;
+  font-family: "Vollkorn", serif;
 }
 </style>

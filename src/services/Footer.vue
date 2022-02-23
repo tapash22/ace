@@ -76,7 +76,7 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #fff;
+  background: #F7F0F5;
 }
 .row {
   width: 100%;
@@ -99,10 +99,10 @@
   justify-content: center;
   width: 600px;
   height: 60px;
-   background: green;
+   background: #F9A51A;
    z-index: 1;
    border-radius: 5px;
-   box-shadow: 0 0 20px #fff;
+   box-shadow: 0 0 20px #F9A51A;
 }
 ul li {
   padding: 5px;
@@ -115,29 +115,29 @@ ul li p {
   font-weight: 500;
   font-family: 'Vollkorn', serif;
   padding: 5px;
-  color: #000;
+  color: #F7F0F5;
 }
 li i {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 5px;
   margin: 0;
-  color: #000;
+  color: #F7F0F5;
   z-index: 2;
 }
 .quick {
   padding: 10px;
   margin-top: -30px;
-  background: green;
+  background: #81C747;
   width: 20%;
-  box-shadow: 2px 2px 5px #fff;
+  box-shadow: 2px 2px 5px #F9A51A;
 }
 .product {
   padding: 10px;
   margin-top: -30px;
-  background: green;
+  background: #81C747;
   width: 40%;
-  box-shadow: 2px 2px 5px #fff;
+  box-shadow: 2px 2px 5px #F9A51A;
 }
 .product .image {
   padding: 0;
@@ -153,9 +153,9 @@ li i {
 .contact {
   padding: 10px;
   margin-top: -30px;
-  background: green;
+  background: #81C747;
   width: 40%;
-  box-shadow: 2px 2px 5px #fff;
+  box-shadow: 2px 2px 5px #F9A51A;
 }
 .col-md-4 h3 {
   /* margin-top: 20px; */
@@ -178,7 +178,7 @@ li i {
 }
 .quick ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: 'Vollkorn', serif;
@@ -186,17 +186,18 @@ li i {
   margin: 0;
 }
 .contact form .btn{
-  width: 80px;
-  height: 50px;
-  padding: 5px;
-  margin: 5px;
-  color: #000;
-  background: #fff;
-  font-size: 1.4rem;
+  width: 60px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  color: #221E1F;
+  background: #F7F0F5;
+  font-size: 1.2rem;
   font-weight: 600;
+  font-family: 'Vollkorn', serif;
 }
 .row2 {
-  background: rgba(0, 128, 0, 0.767);
+  background: #F7F0F5;
   box-shadow: 2px 2px 4px #fff;
   display: flex;
   padding: 10px;

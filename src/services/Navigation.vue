@@ -90,12 +90,12 @@ export default {
 }
 nav {
   width: 100%;
-  height: 150px;
+  height: 140px;
   padding: 10px;
   margin: 0;
   display: flex;
-  background: #fff;
-  box-shadow: 0 0 10px green;
+  background: #F7F0F5;
+  box-shadow: 0 0 10px #F9A51A;
 }
 nav .brand {
   width: 20%;
